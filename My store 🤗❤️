@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجري الإلكتروني</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(90deg, #2E8B57, #1E90FF);
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+        nav {
+            background: #ffffff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #2E8B57;
+            font-weight: bold;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 900px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            background: #1E90FF;
+            color: white;
+            padding: 12px 25px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #2E8B57;
+            transform: scale(1.05);
+        }
+        .contact {
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #2E8B57;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #1E90FF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        مرحبًا بكم في متجري الإلكتروني
+    </header>
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#products">المنتجات</a>
+        <a href="#courses">الدورات</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+    <div class="container">
+        <h2>اكتشف منتجاتنا ودوراتنا التكوينية</h2>
+        <a href="#" class="btn">المنتجات</a>
+        <a href="#" class="btn">الدورات التكوينية</a>
+    </div>
+    <div class="contact" id="contact">
+        <h3>اتصل بنا</h3>
+        <form>
+            <input type="text" placeholder="الاسم" required>
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <textarea placeholder="رسالتك" rows="4" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</body>
+</html>
